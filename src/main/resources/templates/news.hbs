@@ -1,0 +1,19 @@
+{{#partial "content"}}
+<div id="toto">
+        <form action="/hope/new" method="post">
+            <div class="form-group">
+                <label for="news">General News</label><br>
+                <input type="text"  placeholder="Enter General news" name="general">
+            </div>
+              <div class="form-group">
+                 <label for="deparnews">Department News</label><br>
+                <input type="text"  placeholder="Enter Department News" name="depart">
+            </div>
+
+           <div >
+                          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                      </div>
+                  </form>
+                  </div>
+          {{/partial}}
+          {{>layout.hbs}}

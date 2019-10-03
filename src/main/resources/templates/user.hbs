@@ -1,0 +1,26 @@
+{{#partial "content"}}
+ <div id="toto">
+         <form action="/users/new" method="post">
+             <div class="form-group">
+                 <label for="user_name">Employee name</label><br>
+                 <input type="text"  placeholder="Enter user name" name="user_name">
+             </div>
+               <div class="form-group">
+                  <label for="position">Employee Position</label><br>
+                 <input type="text"  placeholder="Enter Position" name="position">
+             </div>
+             <div class="form-group">
+                    <label for="role">Employee Role</label><br>
+                   <input type="text"  placeholder="Enter Role" name="role">
+              </div>
+              <div class="form-group">
+                <label for="department">Employee Department </label><br>
+                 <input type="text"  placeholder="Enter Department name" name="department">
+               </div>
+            <div >
+                           <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                       </div>
+                   </form>
+                   </div>
+           {{/partial}}
+           {{>layout.hbs}}

@@ -1,7 +1,5 @@
-##Animal
-
-wildlife tracker
-
+##news portal
+organisation news portal
 ####In this project , i will build a web application that allow user to querying and retrieving scoped news and information. 
 
 umwali diane

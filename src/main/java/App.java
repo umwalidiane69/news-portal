@@ -9,7 +9,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 
 public class App {
     public static void main(String[] args){
-//        staticFileLocation("/public");
+        staticFileLocation("/public");
         get("/", (request, response) -> {
             Map<String, Object>  model= new HashMap();
             return new ModelAndView (model,"news.hbs");

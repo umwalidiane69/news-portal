@@ -20,8 +20,8 @@ public class news extends Company{
         try(Connection con = DB.sql2o.open()) {
             String sql = "INSERT INTO new(departmentn,general) VALUES (:departmentn,:general)";
             this.id = (int) con.createQuery(sql, true)
-                    .addParameter("general", this.general)
                     .addParameter("departmentn", this.departmentn)
+                    .addParameter("general", this.general)
                     .executeUpdate()
                     .getKey();
         }
